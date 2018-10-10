@@ -13,3 +13,14 @@ input.addEventListener('keydown', function(e) {
   console.log(e.which);
   }
 });
+
+//Section; Explain the difference between bubbling and capturing events
+let divs = document.querySelectorAll('div');
+
+function bubble(e) {
+  console.log(this.firstChild.nodeValue.trim() + ' bubbled')
+}
+
+
+
+
