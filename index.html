@@ -75,6 +75,7 @@
   }
 
   function capture(e) {
+    e.stopPropagation();
     console.log(this.firstChild.nodeValue.trim() + ' captured');
   }
 
